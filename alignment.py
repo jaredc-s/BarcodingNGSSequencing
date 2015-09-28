@@ -133,7 +133,7 @@ def main(firstInput,wtInput,freqInput,res,freq_out):
 #print freq_out
 	c1 = csv.writer(open(f3, "wt"))
 	c2 = csv.writer(open(f5, "wt"))
-	c3 = csv.writer(open(f6, "a"))
+	c3 = csv.writer(open(f6, "wt"))
 	
 	c1.writerow(' '+(seq1))
 	c1.writerow(['Insert']+ins[1:])
@@ -147,8 +147,10 @@ def main(firstInput,wtInput,freqInput,res,freq_out):
 	c2.writerow(['Delete']+del_freq[1:])
 	indels[3]=indels[0]-indels[1] #wt
 	indels[4]=indels[1]-indels[2] #indels without frameshift
+
+	c3.writerow(' '+ ['Total']+['Indels']+['FrameShift']+	['WT+	Indels-Frameshifts'])
 	#print indels
-	c3.writerow([f3.strip("_")]+indels)
+	c3.writerow(['indels']+indels)
 	#print "end"
 	return 0
 ############################################################
