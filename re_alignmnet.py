@@ -226,8 +226,8 @@ def main(uniqueSeqFile,wtSeqFile,freqInput,res,freq_out):
 	mat=[0]*len(wtSeq)
 	sh_in=[0]*len(wtSeq)
 	sh_del=[0]*len(wtSeq)
-	in_freq=[0]*21
-	del_freq=[0]*21
+	in_freq=[0]*len(wtSeq)
+	del_freq=[0]*len(wtSeq)
 	for line in f2:
 		freq=int(f4.readline())
 		i+=1

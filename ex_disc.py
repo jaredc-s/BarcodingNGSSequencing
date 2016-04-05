@@ -15,8 +15,8 @@ import csv
 	
 
 def main(SeqInput,SeqOutput,freqOutput):
-	sub=("TGCCACCAAATTCCCTTCCT").upper()
-	sub2=("AGCACCCATTTTTC").upper()
+	sub=("CATAGCCGTATAG").upper()
+	sub2=("CACGTCTGAACTC").upper()
 	
 	f = open(SeqInput)
 	
