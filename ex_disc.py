@@ -12,7 +12,8 @@ import csv
 #OCT4 ,gtggtccgagtgtggtt,	gaaaggagacccagcag, ctgctgggtctcctttc
 #Pax6 ,aagcaaaatagcccagtataag,tatgttatcgttggtacagacc,ggtctgtaccaacgataacata
 #POU4F1 ,cctcacccgcatatgcacag,CCCGGACGGCATGTTCA, TGAACATGCCGTCCGGG
-	
+
+# python ex_dicts.py Input_Seq.txt Output_listOfUniqueSeq.txt Output_Frequency.txt	
 
 def main(SeqInput,SeqOutput,freqOutput):
 	sub=("CATAGCCGTATAG").upper()
