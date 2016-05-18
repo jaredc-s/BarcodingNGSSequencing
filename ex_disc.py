@@ -16,8 +16,8 @@ import csv
 # python ex_dicts.py Input_Seq.txt Output_listOfUniqueSeq.txt Output_Frequency.txt	
 
 def main(SeqInput,SeqOutput,freqOutput):
-	sub=("CATAGCCGTATAG").upper()
-	sub2=("CACGTCTGAACTC").upper()
+	sub=("cctcacccgcatatgcacag").upper()
+	sub2=("TGAACATGCCGTCCGGG").upper()
 	
 	f = open(SeqInput)
 	
